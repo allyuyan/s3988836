@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+
+        <title>
+            Smart Home Icons
+        </title>
+
+        <style>
+            .row{
+                width: 720px;
+                margin: 10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+        </style>
+        
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    
+    </head>
+   
+    <body style = "background-color: white">
+
+        <div class = "row">
+            <img id = "L" src = "img/L1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/L2.JPG';" onmouseup = "this.src = 'img/L1.JPG';"/>
+            <img id = "SC" src = "img/SC1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/SC2.JPG';" onmouseup = "this.src = 'img/SC1.JPG';"/>
+            <img id = "LB" src = "img/LB1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/LB2.JPG';" onmouseup = "this.src = 'img/LB1.JPG';"/>
+        </div>
+
+        <div class = "row">
+            <img id = "F" src = "img/F1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/F2.JPG';" onmouseup = "this.src = 'img/F1.JPG';"/>
+            <img id = "FP" src = "img/FP1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/FP2.JPG';" onmouseup = "this.src = 'img/FP1.JPG';"/>
+            <img id = "K" src = "img/K1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/K2.JPG';" onmouseup = "this.src = 'img/K1.JPG';"/>
+        </div>
+
+        <div class = "row">
+            <img id = "PF" src = "img/PF1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/PF2.JPG';" onmouseup = "this.src = 'img/PF1.JPG';"/>
+            <img id = "WD" src = "img/WD1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/WD2.JPG';" onmouseup = "this.src = 'img/WD1.JPG';"/>
+            <img id = "S" src = "img/S1.JPG" width = "200" height = "200" onmousedown = "this.src = 'img/S2.JPG';" onmouseup = "this.src = 'img/S1.JPG';"/>
+        </div>
+
+        <script>
+            var L = new buzz.sound("sound/L.m4a");
+            var SC = new buzz.sound("sound/SC.m4a");
+            var LB = new buzz.sound("sound/LB.m4a");
+            var F = new buzz.sound("sound/F.m4a");
+            var FP = new buzz.sound("sound/FP.m4a");
+            var K = new buzz.sound("sound/K.m4a");
+            var PF = new buzz.sound("sound/PF.m4a");
+            var WD = new buzz.sound("sound/WD.m4a");
+            var S = new buzz.sound("sound/S.m4a");
+
+            window.onload = function() {
+                document.getElementById('L').addEventListener('mousedown', function () {L.play();});
+                document.getElementById('SC').addEventListener('mousedown', function () {SC.play();});
+                document.getElementById('LB').addEventListener('mousedown', function () {LB.play();});
+                document.getElementById('F').addEventListener('mousedown', function () {F.play();});
+                document.getElementById('FP').addEventListener('mousedown', function () {FP.play();});
+                document.getElementById('K').addEventListener('mousedown', function () {K.play();});
+                document.getElementById('PF').addEventListener('mousedown', function () {PF.play();});
+                document.getElementById('WD').addEventListener('mousedown', function () {WD.play();});
+                document.getElementById('S').addEventListener('mousedown', function () {S.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
